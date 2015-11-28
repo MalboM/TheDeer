@@ -8,5 +8,5 @@ function Start () {
 
 
 	
-	cervo.transform.position = Vector3(posizionex, 1.74, -3.74);
+	cervo.transform.position = Vector3(posizionex, 1.0, -3.74);
 }

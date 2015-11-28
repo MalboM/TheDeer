@@ -1,5 +1,7 @@
 var suono : GameObject;
 var livello : int;
+var dissolvenza : Animator;
+var waittime : float;
 
 function OnMouseEnter () {
 	
@@ -9,6 +11,18 @@ function OnMouseEnter () {
 
 
 function OnMouseDown () {
+    dissolvenza.SetBool("DissolvenzaBool",true);
+    //Application.LoadLevel(livello);
 
-	Application.LoadLevel(livello);
+    StartCoroutine(WaitandLoad()) ;
+}
+
+
+
+
+
+function WaitandLoad () {
+  
+    yield WaitForSeconds (waittime);
+    Application.LoadLevel(livello);
 }

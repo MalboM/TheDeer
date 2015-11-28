@@ -1,7 +1,7 @@
 var suono : GameObject;
+var livello : int;
 
-
-function OnMouseEnter () {
+function OnMouseOver () {
 	
 	suono.GetComponent.<AudioSource>().Play();
 
@@ -10,5 +10,5 @@ function OnMouseEnter () {
 
 function OnMouseDown () {
 
-	Application.LoadLevel(1);
+    Application.LoadLevel(livello);
 }
