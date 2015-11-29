@@ -6,7 +6,7 @@ var prova : float;
 
 var translationvertical : float;
 var translationhorizontal : float;
-
+var mouserigidbody: Rigidbody;
 var speed : float;
 
 var limitey : float;
@@ -14,22 +14,24 @@ var limitey2 : float;
 
 function Update () {
 			
-	
-	
+   
 	this.transform.Translate(Vector3.up *i* -2* Time.deltaTime, Space.World);
 	this.transform.Translate(Vector3.right *t*2* Time.deltaTime, Space.World);
-	
-	
+
+
 
 	if ((Input.GetAxisRaw("RightJoystickVertical") <limitey) || (Input.GetAxisRaw("RightJoystickVertical") >limitey2) )
 		
        	 {
-            prova = 1;
-            i = Input.GetAxisRaw ("RightJoystickVertical") ;
+	         prova = 1;
+
+	         i = Input.GetAxisRaw ("RightJoystickVertical") ;
+	         this.GetComponent("MouseDragObj2").enabled = false;
+	         this.GetComponent.<Collider>().enabled = true;
              
     }
     else{
-    
+	   // this.GetComponent("MouseDragObj2").enabled = true;
     prova = 0;
     i = 0;
     }
@@ -41,11 +43,12 @@ function Update () {
        	 {
             prova = 1;
            	t = Input.GetAxisRaw ("RightJoystickHorizontal") ;	
-	
+           	this.GetComponent("MouseDragObj2").enabled = false;
+           	this.GetComponent.<Collider>().enabled = true;
              
     }
     else{
-    
+      // this.GetComponent("MouseDragObj2").enabled = true;
     prova = 0;
     t = 0;
     }

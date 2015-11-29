@@ -8,3 +8,12 @@ function OnMouseEnter () {
 	oggetto.GetComponent.<Animation>().CrossFade(animazione);
 
 }
+
+
+
+
+function OnTriggerEnter(other:Collider){
+   
+    oggetto.GetComponent.<Animation>().CrossFade(animazione);
+
+}

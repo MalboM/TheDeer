@@ -15,3 +15,12 @@ function OnMouseEnter () {
 	boleano = false;
 	}
 }
+
+function OnTriggerEnter(other:Collider){
+   
+    oggetto.GetComponent.<Renderer>().material.mainTexture = tex;
+	
+    oggetto.GetComponent.<AudioSource>().Play();
+	
+    boleano = false;
+}
