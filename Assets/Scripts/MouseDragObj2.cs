@@ -51,7 +51,7 @@ public class MouseDragObj2 : MonoBehaviour
 
 /*The Z of the mousePosition is 0, so if we just project the mouse position to the world it will show up ontop of the camera, so if we set to to 60, it will project the position outwards 60 units, this is useful because in this case, we keep the main character 60 units away from the camera at all times.*/
 
-                mousePosition.z = 4;
+                mousePosition.z = 2;
 
 
 /*Now we want to make sure that the object doesn't go off the screen. This next section makes sure of that by comparing the mouse position to boundaries created in the code*/
