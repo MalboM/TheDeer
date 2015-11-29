@@ -12,11 +12,14 @@ var speed : float;
 var limitey : float;
 var limitey2 : float;
 
+
+
+
 function Update () {
 			
    
-	this.transform.Translate(Vector3.up *i* -2* Time.deltaTime, Space.World);
-	this.transform.Translate(Vector3.right *t*2* Time.deltaTime, Space.World);
+    this.transform.Translate(Vector3.up *i* -speed* Time.deltaTime, Space.World);
+    this.transform.Translate(Vector3.right *t*speed* Time.deltaTime, Space.World);
 
 
 

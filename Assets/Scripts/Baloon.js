@@ -28,10 +28,15 @@ function Update() {
 	timer += Time.deltaTime;
 	
 	}
+
+    if (timer2 >= 2)
+        testomaterial.color.a = testomaterial.color.a - 0.01;
+
 	if (timer >= lifeTime) {
 				
 	    bianco.GetComponent.<Renderer>().material.color -= Color(0, 0, 0) * Time.deltaTime;
-	    testomaterial.color.a = testomaterial.color.a - 0.01;
+
+	 
 
 		attivato = false;
 		
@@ -56,7 +61,7 @@ function Update() {
 function OnTriggerEnter(other:Collider){
    
     attivato = true;
-
+    testomaterial = testo.transform.GetComponent(TextMesh);
 }
 
 

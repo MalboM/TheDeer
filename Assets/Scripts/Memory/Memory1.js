@@ -23,6 +23,28 @@ function OnMouseDown () {
 	
 }
 
+
+
+
+function OnTriggerStay(other:Collider){
+    
+    if(Input.GetAxis ("PadA") == 1) {
+        if(conteggio == 0){
+            carta1.GetComponent.<Renderer>().material.mainTexture = tex;
+            attivato = true;
+            GameObject.Find("Main Camera").GetComponent.<AudioSource>().Play();
+        }
+    }
+    
+    if(Input.GetAxis("PadRightTrigger") >= 0.1){
+        if(conteggio == 0){
+            carta1.GetComponent.<Renderer>().material.mainTexture = tex;
+            attivato = true;
+            GameObject.Find("Main Camera").GetComponent.<AudioSource>().Play();
+        }
+    }
+}
+
 function Update() {
 
 	if(attivato == true){
