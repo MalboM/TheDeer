@@ -10,6 +10,11 @@ function OnMouseEnter () {
 
 }
 
+function OnTriggerEnter(other:Collider){
+    
+    suono.GetComponent.<AudioSource>().Play();
+
+}
 
 function OnMouseDown () {
     dissolvenza.SetBool("DissolvenzaBool",true);
@@ -27,6 +32,7 @@ function Update(){
    // }
 
 }
+
 
 
 function OnTriggerStay(other:Collider){
