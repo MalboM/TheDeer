@@ -4,21 +4,20 @@ public var modello : GameObject;
 
 var stringa : String;
 
-function OnCollisionEnter(collision : Collision) {
+function OnTriggerEnter(other:Collider) {
 // Debug-draw all contact points and normals
-for (var contact : ContactPoint in collision.contacts)
-		{
+   /// for (var contact : ContactPoint in other.contacts)
+		//{
 		
-		 if(collision.gameObject.tag == stringa){
+		 if(other.gameObject.tag == stringa){
 			
 			modello.GetComponent.<Renderer>().enabled =true;
 			
-			Destroy(collision.gameObject);
+			Destroy(other.gameObject);
 			
 			suono.GetComponent.<AudioSource>().Play();
 			
-		}
-		
+		//}
 		
 		}
 }
