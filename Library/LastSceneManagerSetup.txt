@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MemoryGame2.unity
+- path: Assets/Level2.7.unity
   isLoaded: 1
   isActive: 1
