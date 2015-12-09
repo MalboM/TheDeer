@@ -1,5 +1,5 @@
 5.2.3f1:2.1.0.0
-WebPlayer
+StandaloneWindows
 C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll
 C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll
 C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
@@ -16,8 +16,6 @@ C:\Program Files\Unity\Editor\Data\PlaybackEngines\androidplayer/UnityEditor.And
 C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 C:\Program Files\Unity\Editor\Data\PlaybackEngines\wp8support/UnityEditor.WP8.Extensions.dll
 C:\Program Files\Unity\Editor\Data\PlaybackEngines\metrosupport/UnityEditor.Metro.Extensions.dll
-C:\Program Files\Unity\Editor\Data\PlaybackEngines\TizenPlayer/UnityEditor.Tizen.Extensions.dll
-C:\Program Files\Unity\Editor\Data\PlaybackEngines\stvplayer/UnityEditor.SamsungTV.Extensions.dll
 C:\Program Files\Unity\Editor\Data\PlaybackEngines\webglsupport/UnityEditor.WebGL.Extensions.dll
 C:\Program Files\Unity\Editor\Data\PlaybackEngines\linuxstandalonesupport/UnityEditor.LinuxStandalone.Extensions.dll
 C:\Program Files\Unity\Editor\Data\PlaybackEngines\windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll
