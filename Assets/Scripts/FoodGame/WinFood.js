@@ -1,18 +1,18 @@
 ﻿
 var deerwin : GameObject;
 
-var cibo1 : GameObject;
-var cibo2 : GameObject;
-var cibo3 : GameObject;
-var cibo4 : GameObject;
-var cibo5 : GameObject;
+var osso1 : GameObject;
+var osso2 : GameObject;
+var osso3 : GameObject;
+var osso4 : GameObject;
+var osso5 : GameObject;
 
 
 
 function Update () {
 
 
-    if((cibo1.GetComponent.<Renderer>().enabled == true) && (cibo2.GetComponent.<Renderer>().enabled == true)&& (cibo3.GetComponent.<Renderer>().enabled == true)&& (cibo4.GetComponent.<Renderer>().enabled == true)&& (cibo5.GetComponent.<Renderer>().enabled == true)) {
+    if((osso1.GetComponent.<Renderer>().enabled == true) && (osso2.GetComponent.<Renderer>().enabled == true)&& (osso3.GetComponent.<Renderer>().enabled == true)&& (osso4.GetComponent.<Renderer>().enabled == true)&& (osso5.GetComponent.<Renderer>().enabled == true)) {
         deerwin.GetComponent.<Renderer>().enabled = true;
         deerwin.GetComponent("AudioSource").enabled = true;
     }
